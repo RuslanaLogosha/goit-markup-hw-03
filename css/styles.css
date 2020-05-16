@@ -60,11 +60,16 @@ body {
 
 
 /* Header */
+
 header {
   background-color: var(--header-background-color);
 }
 
 .logo {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
   font-family: Raleway;
   font-style: normal;
   font-weight: 700;
@@ -78,11 +83,39 @@ header {
   color: var(--accent-text-color);
 }
 
+/* Whole header */
+.topline {
+  display: flex;
+  align-items: center;
+}
+
+
+/* Main nav  */
+.main-nav {
+  display: flex;
+  
+}
+
+/* Site nav */
+.site-nav {
+  display: flex;
+  margin-left: 86px;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--titles-text-color);
+  
 }
 
 .site-nav .link:hover,
@@ -92,6 +125,16 @@ header {
 
 .site-nav .link.current {
   color: var(--accent-text-color);
+}
+
+/* Site auth */
+.site-auth {
+  display: flex;
+  margin-left: auto;
+}
+
+.site-auth .item + .item {
+  margin-left: 30px;
 }
 
 .site-auth .link {
