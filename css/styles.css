@@ -34,9 +34,13 @@ html {
   text-decoration: none;
 }
 
+img {
+ display: block;
+}
+
 h1, h2, h3 {
   margin-top: 0;
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
 }
 
 
@@ -138,6 +142,10 @@ header {
 }
 
 .site-auth .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -218,10 +226,18 @@ header {
 }
 /* Advantages */
 .advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--main-background-color);
 }
 
+.advantages h2 {
+  display: none;
+}
+
 .advantages .advantages-titles {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14x;
@@ -231,8 +247,16 @@ header {
 }
 
 .advantages .advantages-text {
+  margin-top: 0;
+  margin-bottom: 0;
+
   letter-spacing: 0.03em;
 }
+
+.list .advan-img {
+  margin-bottom: 30px;
+}
+
 
 /* General for specialization, team and customers h2*/
 .section-title {
@@ -341,8 +365,31 @@ color: var(--signature-text-color);
 }
 
 /* Portfolio.css (exept buttons) */
+.flex-examples {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-examples-elements {
+  width: 380px;
+}
+
+.flex-examples-elements:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.flex-examples-elements:not(:nth-last-child(-n+3)) {
+  margin-bottom: 30px;
+}
+
+.examples-main-header {
+  display: none;
+}
 
 .examples .examples-headings {
+  margin-top: 20px;
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -351,6 +398,9 @@ color: var(--signature-text-color);
 }
 
 .examples .examples-type {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -361,10 +411,12 @@ color: var(--signature-text-color);
 }
 
 .examples .examples-text {
-font-size: 18px;
-line-height: 1.55;
-letter-spacing: 0.03em;
-color: var(--main-title-color);
+  display: none;   /* временно */
+
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: var(--main-title-color);
 background-color: var(--accent-text-color); /* temporary */
 }
 
