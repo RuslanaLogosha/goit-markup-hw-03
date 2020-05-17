@@ -502,6 +502,9 @@ input::placeholder {
 }
 
 /* Examples  */
+.rows {
+  padding-bottom: 94px;
+}
 .flex-examples {
   display: flex;
   flex-wrap: wrap;
