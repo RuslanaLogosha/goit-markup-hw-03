@@ -59,7 +59,7 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid tomato;
+ 
 }
 
 
@@ -354,6 +354,7 @@ header {
 .icons-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 24px;
 }
 
 .icons-list > li + li {
@@ -364,15 +365,37 @@ header {
 .customers {
   padding-top: 94px;
   padding-bottom: 94px;
-  
+
   background-color: var(--main-background-color);
 }
 
+.customers-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.customers-item + .customers-item {
+  margin-left: 30px;
+}
 /* Footer */
+
+/* Adress  */
 .footer {
   background-color: var(--footer-background-color);
 }
+
+.footer-flex {
+  display: flex;
+}
+.footer-container {
+  display: block; 
+}
 .footer-logo {
+  display: block;
+  margin-top: 48px;
+  margin-bottom: 10px;
+
   font-family: Raleway;
   font-weight: 700;
   font-size: 22px;
@@ -385,19 +408,45 @@ header {
   color: var(--accent-text-color);
 }
 
+.address {
+  margin-right: 179px;
+  width: 231px;
+}
 .address .exact-address {
+  margin-top: 0;
+  
   font-style: normal;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
 }
 
 .address .footer-contact {
+  display: block;
+  margin-top: 9px;
+
   font-style: normal;
   letter-spacing: 0.03em;
   color: var(--footer-opaque-color);
 }
 
+/* Connect social  */
+.connect-container {
+  margin-right: 102px;
+  width: 207px;
+}
+
+.icons-footer {
+  display: flex;
+}
+
+.icons-footer .icon + .icon {
+  margin-left: 10px;
+}
+
 .footer .connect {
+  margin-top: 48px;
+  margin-bottom: 21px;
+
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -406,10 +455,17 @@ header {
 }
 
 .connect .email {
-font-size: 16px;
-line-height: 1.87;
-letter-spacing: 0.03em;
-color: var(--footer-opaque-color);
+  display: block;
+
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--footer-opaque-color);
+}
+
+input::placeholder {
+  width: 270px;
+
 }
 
 .btn-add {
