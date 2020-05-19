@@ -402,6 +402,7 @@ header {
 .footer-flex {
   display: flex;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  justify-content: space-between;
 }
 .footer-container {
   display: block; 
@@ -424,8 +425,8 @@ header {
 }
 
 .address {
-  margin-right: 179px;
   width: 231px;
+  padding-bottom: 28px;
 }
 .address .exact-address {
   margin-top: 0;
@@ -446,7 +447,6 @@ header {
 
 /* Connect social  */
 .connect-container {
-  margin-right: 102px;
   width: 207px;
 }
 
@@ -530,7 +530,7 @@ input::placeholder {
 }
 
 .flex-examples-elements {
-  width: 380px;
+  width: calc((100% - 60px) / 3);
 }
 
 .flex-examples-elements:not(:nth-child(3n)) {
