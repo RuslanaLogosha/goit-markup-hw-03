@@ -54,11 +54,12 @@ body {
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  /* outline: 1px solid red; */
  
 }
 
@@ -228,14 +229,16 @@ header {
 /* Advantages */
 .advantages {
   padding-top: 94px;
-  padding-bottom: 94px;
-
+  
   background-color: var(--main-background-color);
 }
 
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 94px;
+
+  border-bottom: 1px solid #ECECEC;
 }
 
 .advantages h2 {
@@ -265,11 +268,11 @@ header {
 }
 
 .advantages-item {
-  width: 278px;
+  width: calc((100% - 90px) / 4);
 }
 
 .advantages-item + .advantages-item {
-  margin-left: 29px;
+  margin-left: 30px;
 }
 
 /* General for specialization, team and customers h2*/
@@ -282,6 +285,7 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--titles-text-color);
+  
 }
 
 /* What we do */
@@ -290,16 +294,18 @@ header {
   flex-wrap: wrap;
 }
 
-/* .spec-item {
-  width: 380px;
-} */
+.spec-item {
+  width: calc((100% - 60px) / 3);
+}
 
 .spec-item + .spec-item {
   margin-left: 30px;
 }
 
 .specialization {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+
   background-color: var(--main-background-color);
 }
 
@@ -315,6 +321,9 @@ header {
 
 /* Our team */
 .team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
   background-color: var(--team-background-color);
 }
 
@@ -324,6 +333,7 @@ header {
 }
 
 .team-item {
+  width: calc((100% - 90px) / 4);
   text-align: center;
 }
 
@@ -375,6 +385,10 @@ header {
   justify-content: center;
 }
 
+.customers-item {
+  width: calc((100% - 150px) / 6);
+}
+
 .customers-item + .customers-item {
   margin-left: 30px;
 }
@@ -387,6 +401,7 @@ header {
 
 .footer-flex {
   display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .footer-container {
   display: block; 
@@ -473,12 +488,16 @@ input::placeholder {
   font-family: Roboto;
 }
 
-.signature {
+.copyright {
+  padding-top: 18px;
+  padding-bottom: 17px;
+
   font-size: 12px;
   line-height: 2;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--signature-text-color);
+  
 }
 
 /* Portfolio.css (exept buttons) */
